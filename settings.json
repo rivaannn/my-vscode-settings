@@ -1,0 +1,26 @@
+{
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.sideBar.location": "right",
+  "workbench.colorTheme": "Tokyo Storm Gogh",
+  "editor.fontSize": 19,
+  "editor.fontFamily": "Cascadia Code",
+  "editor.fontLigatures": true,
+  "editor.codeActionsOnSave": {},
+  "editor.lineHeight": 1.8,
+  "editor.minimap.enabled": false,
+  "terminal.integrated.lineHeight": 1.6,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorWidth": 0.5,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[*]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.wordWrap": "on",
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.fontFamily": "'MesloLGS NF'",
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.fontSize": 17
+}
