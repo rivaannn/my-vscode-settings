@@ -90,7 +90,5 @@
 <p>Feel free to customize these settings further to suit your personal preferences and workflow.</p>
 <h2>🤝 Contributing</h2>
 <p>If you have suggestions for improvements or additional settings, please feel free to submit a pull request or open an issue.</p>
-<h2>📄 License</h2>
-<p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p>
 <hr>
 <p>By maintaining a well-configured <code>settings.json</code>, you can enhance your coding experience, making VSCode more responsive and tailored to your needs. Happy coding! 🚀</p>
