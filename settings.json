@@ -2,11 +2,14 @@
   "workbench.startupEditor": "none",
   "workbench.iconTheme": "vscode-icons",
   "workbench.sideBar.location": "right",
-  "workbench.colorTheme": "Tokyo Storm Gogh",
-  "editor.fontSize": 19,
-  "editor.fontFamily": "Cascadia Code",
+  "editor.fontSize": 18.5,
+  "editor.fontFamily": "FantasqueSansMono, MonoLisa, DankMonoNerdFont, CaskaydiaCove NF",
   "editor.fontLigatures": true,
-  "editor.codeActionsOnSave": {},
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
   "editor.lineHeight": 1.8,
   "editor.minimap.enabled": false,
   "terminal.integrated.lineHeight": 1.6,
@@ -14,13 +17,154 @@
   "terminal.integrated.cursorWidth": 0.5,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggestSelection": "recentlyUsed",
+    "editor.suggest.showKeywords": true
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.formatOnSave": true
+  },
   "[*]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.wordWrap": "on",
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "terminal.integrated.fontFamily": "'MesloLGS NF'",
+  "terminal.integrated.fontFamily": "'MesloLGL Nerd Font Mono'",
   "terminal.integrated.fontWeight": "normal",
-  "terminal.integrated.fontSize": 17
+  "terminal.integrated.fontSize": 17,
+  "helium-icon-theme.showWelcomeMessage": false,
+  "vsicons.dontShowNewVersionMessage": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "explorer.confirmDragAndDrop": false,
+  "terminal.integrated.enableMultiLinePasteWarning": "auto",
+  "explorer.confirmDelete": false,
+  "editor.linkedEditing": true,
+  "database-client.autoSync": true,
+  "json.schemas": [],
+  "chat.editing.alwaysSaveWithGeneratedChanges": true,
+  "chat.editing.confirmEditRequestRemoval": false,
+  "remote.SSH.remotePlatform": {
+    "103.41.247.217": "linux"
+  },
+  "editor.snippetSuggestions": "top",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "php": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.showExpandedAbbreviation": "always",
+  "emmet.preferences": {
+    "filter.commentAfter": "<!-- /[#ID][.CLASS] -->",
+    "format.forceIndentationForTags": [
+      "body",
+      "div",
+      "form",
+      "main",
+      "ul",
+      "ol",
+      "li",
+      "section",
+      "article"
+    ]
+  },
+  "editor.formatOnPaste": true,
+  "terminal.integrated.env.windows": {},
+  "console-ninja.featureSet": "Community",
+  "liveServer.settings.donotVerifyTags": true,
+  "workbench.settings.applyToAllProfiles": [],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "editor.quickSuggestions": {
+    "strings": true,
+    "comments": true,
+    "other": true
+  },
+  "editor.suggestSelection": "first",
+  "editor.snippetSuggestActions": {
+    "showFirst": true
+  },
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.suggest.showSnippets": true,
+  "editor.suggest.filterGraceful": true,
+  "editor.suggest.localityBonus": true,
+  "editor.tabSize": 2,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.matchBrackets": "always",
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingQuotes": "always",
+  "editor.detectIndentation": true,
+  "editor.renderLineHighlight": "all",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "editor.renderWhitespace": "boundary",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.trailingComma": "es5",
+  "prettier.semi": true,
+  "prettier.tabWidth": 2,
+  "html.format.wrapAttributes": "auto",
+  "css.lint.unknownAtRules": "ignore",
+  "css.validate": true,
+  "less.validate": true,
+  "scss.validate": true,
+  "html.autoClosingTags": true,
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "path-intellisense.showHiddenFiles": true,
+
+  // PHP specific settings
+  "php.suggest.basic": true,
+  "php.validate.enable": true,
+  "php.validate.run": "onSave",
+  "php.executablePath": "php",
+  "php.format.codeStyle": "PSR-12",
+  "intelephense.format.enable": true,
+  "intelephense.completion.insertUseDeclaration": true,
+  "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": false,
+  "intelephense.diagnostics.undefinedTypes": false,
+  "intelephense.diagnostics.undefinedFunctions": false,
+  "intelephense.diagnostics.undefinedConstants": false,
+  "intelephense.diagnostics.undefinedClassConstants": false,
+  "intelephense.diagnostics.undefinedMethods": false,
+  "intelephense.diagnostics.undefinedProperties": false,
+  "intelephense.diagnostics.undefinedVariables": false,
+  "[blade]": {
+    "editor.defaultFormatter": "onecentlin.laravel-blade"
+  },
+  "php-docblocker.gap": true,
+  "php-docblocker.useShortNames": true,
+  "workbench.colorTheme": "One Dark Pro Night Flat"
 }
