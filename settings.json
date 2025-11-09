@@ -1,119 +1,23 @@
 {
+  // ============================================
+  // WORKBENCH - Tampilan Umum VS Code
+  // ============================================
   "workbench.startupEditor": "none",
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "right",
+  "workbench.colorTheme": "Theme Darker",
+  "workbench.colorCustomizations": {},
+
+  // ============================================
+  // EDITOR - Pengaturan Teks Umum
+  // ============================================
   "editor.fontSize": 18.5,
-  "editor.fontFamily": "FantasqueSansMono, MonoLisa, DankMonoNerdFont, CaskaydiaCove NF",
+  "editor.fontFamily": "CaskaydiaCove NF",
   "editor.fontLigatures": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit",
-    "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "explicit"
-  },
   "editor.lineHeight": 1.8,
   "editor.minimap.enabled": false,
-  "terminal.integrated.lineHeight": 1.6,
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.cursorWidth": 0.5,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.suggestSelection": "recentlyUsed",
-    "editor.suggest.showKeywords": true
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
-    "editor.formatOnSave": true
-  },
-  "[*]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "editor.wordWrap": "on",
-  "security.workspace.trust.untrustedFiles": "open",
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "terminal.integrated.fontFamily": "'MesloLGL Nerd Font Mono'",
-  "terminal.integrated.fontWeight": "normal",
-  "terminal.integrated.fontSize": 17,
-  "helium-icon-theme.showWelcomeMessage": false,
-  "vsicons.dontShowNewVersionMessage": true,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "explorer.confirmDragAndDrop": false,
-  "terminal.integrated.enableMultiLinePasteWarning": "auto",
-  "explorer.confirmDelete": false,
   "editor.linkedEditing": true,
-  "database-client.autoSync": true,
-  "json.schemas": [],
-  "chat.editing.alwaysSaveWithGeneratedChanges": true,
-  "chat.editing.confirmEditRequestRemoval": false,
-  "remote.SSH.remotePlatform": {
-    "103.41.247.217": "linux"
-  },
-  "editor.snippetSuggestions": "top",
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "typescript": "typescriptreact",
-    "php": "html"
-  },
-  "emmet.triggerExpansionOnTab": true,
-  "emmet.showSuggestionsAsSnippets": true,
-  "emmet.showExpandedAbbreviation": "always",
-  "emmet.preferences": {
-    "filter.commentAfter": "<!-- /[#ID][.CLASS] -->",
-    "format.forceIndentationForTags": [
-      "body",
-      "div",
-      "form",
-      "main",
-      "ul",
-      "ol",
-      "li",
-      "section",
-      "article"
-    ]
-  },
-  "editor.formatOnPaste": true,
-  "terminal.integrated.env.windows": {},
-  "console-ninja.featureSet": "Community",
-  "liveServer.settings.donotVerifyTags": true,
-  "workbench.settings.applyToAllProfiles": [],
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  "editor.quickSuggestions": {
-    "strings": true,
-    "comments": true,
-    "other": true
-  },
-  "editor.suggestSelection": "first",
-  "editor.snippetSuggestActions": {
-    "showFirst": true
-  },
-  "editor.suggest.snippetsPreventQuickSuggestions": false,
-  "editor.suggest.showSnippets": true,
-  "editor.suggest.filterGraceful": true,
-  "editor.suggest.localityBonus": true,
   "editor.tabSize": 2,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
@@ -125,35 +29,186 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.smoothScrolling": true,
   "editor.renderWhitespace": "boundary",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "javascript.suggest.autoImports": true,
-  "typescript.suggest.autoImports": true,
-  "typescript.preferences.importModuleSpecifier": "relative",
+  "editor.formatOnPaste": true,
+
+  // Snippet & Suggestion (Optimized)
+  "editor.snippetSuggestions": "top",
+  "editor.quickSuggestions": {
+    "strings": "on",
+    "comments": "on",
+    "other": "on"
+  },
+  "editor.suggestSelection": "first",
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.suggest.showSnippets": true,
+  "editor.suggest.filterGraceful": true,
+  "editor.suggest.localityBonus": true,
+  "editor.suggest.preview": true,
+  "editor.inlineSuggest.enabled": true,
+
+  // ============================================
+  // TERMINAL
+  // ============================================
+  "terminal.integrated.lineHeight": 1.6,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorWidth": 0.5,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.fontFamily": "CaskaydiaMono Nerd Font Mono",
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+
+  // ============================================
+  // FORMAT & SAVE ACTIONS
+  // ============================================
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+
+  // ============================================
+  // PRETTIER CONFIGURATION
+  // ============================================
   "prettier.singleQuote": true,
   "prettier.jsxSingleQuote": true,
   "prettier.trailingComma": "es5",
   "prettier.semi": true,
   "prettier.tabWidth": 2,
-  "html.format.wrapAttributes": "auto",
-  "css.lint.unknownAtRules": "ignore",
-  "css.validate": true,
-  "less.validate": true,
-  "scss.validate": true,
-  "html.autoClosingTags": true,
+  "prettier.printWidth": 80,
+
+  // Per-Language Formatters
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // ============================================
+  // TAILWIND CSS v4 CONFIGURATION
+  // ============================================
+  "tailwindCSS.experimental.configFile": "./src/index.css",
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.classAttributes": ["class", "className", "ngClass", ":class"],
+  "tailwindCSS.includeLanguages": {
+    "javascript": "html",
+    "javascriptreact": "html",
+    "typescript": "html",
+    "typescriptreact": "html",
+    "vue": "html",
+    "blade": "html",
+    "php": "html"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    "class:\\s*'([^']+)'",
+    "class:\\s*\"([^\"]+)\"",
+    "class=\\{\\s*['\"`]([^'\"`]+)['\"`]\\s*\\}",
+    "className:\\s*['\"`]([^'\"`]+)['\"`]",
+    ":class\\s*=\\s*\"([^\"]+)\"",
+    ":class\\s*=\\s*'([^']+)'",
+    "classList\\s*=\\s*[{`]([^}`]+)[}`]"
+  ],
+
+  // ============================================
+  // FILE MANAGEMENT
+  // ============================================
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmPasteNative": false,
   "files.autoSave": "onFocusChange",
   "files.trimTrailingWhitespace": true,
-  "path-intellisense.showHiddenFiles": true,
+  "files.associations": {
+    "*.blade.php": "blade",
+    "*.css": "tailwindcss"
+  },
 
-  // PHP specific settings
+  // ============================================
+  // JAVASCRIPT & TYPESCRIPT
+  // ============================================
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "javascript.suggest.completeFunctionCalls": true,
+  "typescript.suggest.completeFunctionCalls": true,
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single",
+
+  // ============================================
+  // ESLINT
+  // ============================================
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue"
+  ],
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+
+  // ============================================
+  // EMMET
+  // ============================================
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "vue-html": "html",
+    "blade": "html",
+    "php": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.showExpandedAbbreviation": "always",
+
+  // ============================================
+  // PHP & LARAVEL (INTELEPHENSE)
+  // ============================================
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.formatOnSave": true
+  },
+  "[blade]": {
+    "editor.defaultFormatter": "onecentlin.laravel-blade",
+    "editor.formatOnSave": true
+  },
+
   "php.suggest.basic": true,
   "php.validate.enable": true,
   "php.validate.run": "onSave",
-  "php.executablePath": "php",
-  "php.format.codeStyle": "PSR-12",
+
+  // Intelephense - Maksimalkan IntelliSense PHP
   "intelephense.format.enable": true,
   "intelephense.completion.insertUseDeclaration": true,
   "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": false,
+  "intelephense.completion.triggerParameterHints": true,
+  "intelephense.completion.maxItems": 100,
+
+  // Matikan diagnostics yang mengganggu
   "intelephense.diagnostics.undefinedTypes": false,
   "intelephense.diagnostics.undefinedFunctions": false,
   "intelephense.diagnostics.undefinedConstants": false,
@@ -161,10 +216,131 @@
   "intelephense.diagnostics.undefinedMethods": false,
   "intelephense.diagnostics.undefinedProperties": false,
   "intelephense.diagnostics.undefinedVariables": false,
-  "[blade]": {
-    "editor.defaultFormatter": "onecentlin.laravel-blade"
+
+  // Stubs untuk Laravel & Livewire
+  "intelephense.stubs": [
+    "apache",
+    "bcmath",
+    "bz2",
+    "calendar",
+    "Core",
+    "ctype",
+    "curl",
+    "date",
+    "dba",
+    "dom",
+    "enchant",
+    "exif",
+    "fileinfo",
+    "filter",
+    "ftp",
+    "gd",
+    "gettext",
+    "gmp",
+    "hash",
+    "iconv",
+    "imap",
+    "intl",
+    "json",
+    "ldap",
+    "libxml",
+    "mbstring",
+    "mysqli",
+    "oci8",
+    "odbc",
+    "openssl",
+    "pcntl",
+    "pcre",
+    "PDO",
+    "pgsql",
+    "Phar",
+    "posix",
+    "pspell",
+    "readline",
+    "Reflection",
+    "session",
+    "shmop",
+    "SimpleXML",
+    "snmp",
+    "soap",
+    "sockets",
+    "sodium",
+    "SPL",
+    "sqlite3",
+    "standard",
+    "superglobals",
+    "sysvmsg",
+    "sysvsem",
+    "sysvshm",
+    "tidy",
+    "tokenizer",
+    "xml",
+    "xmlreader",
+    "xmlrpc",
+    "xmlwriter",
+    "xsl",
+    "zip",
+    "zlib"
+  ],
+
+  // Environment untuk Laravel
+  "intelephense.environment.includePaths": ["${workspaceFolder}/vendor"],
+
+  // ============================================
+  // LARAVEL EXTRA INTELLISENSE
+  // ============================================
+  "LaravelExtraIntellisense.basePath": "public",
+
+  // ============================================
+  // CSS & HTML
+  // ============================================
+  "css.lint.unknownAtRules": "ignore",
+  "css.validate": true,
+  "less.validate": true,
+  "scss.validate": true,
+  "html.autoClosingTags": true,
+  "html.format.wrapAttributes": "auto",
+
+  // ============================================
+  // PATH INTELLISENSE
+  // ============================================
+  "path-intellisense.showHiddenFiles": true,
+  "path-intellisense.mappings": {
+    "@": "${workspaceFolder}/resources/js",
+    "~": "${workspaceFolder}/resources"
   },
-  "php-docblocker.gap": true,
-  "php-docblocker.useShortNames": true,
-  "workbench.colorTheme": "One Dark Pro Night Flat"
+
+  // ============================================
+  // VUE.JS CONFIGURATION
+  // ============================================
+  "volar.autoCompleteRefs": true,
+  "volar.codeLens.pugTools": false,
+  "volar.codeLens.scriptSetupTools": true,
+
+  // ============================================
+  // GIT
+  // ============================================
+  "git.openRepositoryInParentFolders": "never",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+
+  // ============================================
+  // GITHUB COPILOT (jika ada)
+  // ============================================
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": true,
+    "blade": true,
+    "php": true
+  },
+
+  // ============================================
+  // EXTENSION LAINNYA
+  // ============================================
+  "security.workspace.trust.untrustedFiles": "prompt",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "vsicons.dontShowNewVersionMessage": true
 }
